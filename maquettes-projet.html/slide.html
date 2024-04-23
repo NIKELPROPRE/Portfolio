@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Exemple</title>
+    <style>
+      .slider-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+      }
+
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        flex: 0 0 33.33%;
+      }
+
+      .slide-content {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .icon4,
+      .icon5 {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 0;
+      }
+
+      .next {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container conteneur">
+      <div class="slider">
+        <div class="slide">
+          <div class="slide-content rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 3.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+            <p class="petit">UI SOUP</p>
+            <button class="work">View Work</button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 5.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 6.png" />
+            <p class="petit">Goldcrown Labs</p>
+            <button class="work">View Work</button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 7.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+            <p class="petit">Close Concierge</p>
+            <button class="work">View Work</button>
+          </div>
+        </div>
+      </div>
+      <div class="prev" onclick="prevSlide()">&#10094;</div>
+      <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+    <script>
+      const slider = document.querySelector(".slider");
+      let slideIndex = 0;
+
+      function showSlide(index) {
+        slider.style.transform = `translateX(-${index * 33.33}%)`;
+      }
+
+      function prevSlide() {
+        if (slideIndex > 0) {
+          slideIndex--;
+          showSlide(slideIndex);
+        }
+      }
+
+      function nextSlide() {
+        if (slideIndex < 2) {
+          slideIndex++;
+          showSlide(slideIndex);
+        }
+      }
+    </script>
+  </body>
+</html>

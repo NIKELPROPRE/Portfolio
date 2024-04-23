@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/autre.css" />
+    <link rel="stylesheet" href="js/maquettesjava.js" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;700&family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@500&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Dream Agency</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <ul class="menu">
+          <li class="menu-home">Home</li>
+          <li class="menu-reste">About us</li>
+          <li class="menu-reste">Services</li>
+          <li class="menu-reste">Contact us</li>
+        </ul>
+        <p class="logo">Dream Agency</p>
+        <ul class="icon">
+          <li>
+            <svg
+              class="social-icon-facebook"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="social-icon-link"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="social-icon-square"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <div class="deux">
+          <img class="vector-4" alt="Vector" src="img/Vector 4.png" />
+          <p class="titre">
+            <strong class="Titre">We Help you </strong> to grow your Business
+          </p>
+          <p class="texte">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button class="btn">Get started</button>
+          <div class="image-container">
+            <img class="ellipse" alt="ellipse" src="img/Ellipse 11.png" />
+            <img class="vector-3" alt="Vector" src="img/Vector 3.png" />
+            <img class="vector-1" alt="Vector" src="img/Vector 1.png" />
+            <img
+              class="image-1"
+              src="img/Mask Group.png"
+              alt="photo"
+              class="img"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <img class="rectangle-2" alt="rectangle" src="img/Rectangle 2.png" />
+        <img class="vecor-5" alt="rectangle" src="img/Vector 4.png" />
+        <svg
+          class="icon-2"
+          width="11"
+          height="16"
+          viewBox="0 0 11 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L9 8.34426L1 15"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          class="icon-3"
+          width="11"
+          height="16"
+          viewBox="0 0 11 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 1L2 8.34426L10 15"
+            stroke="black"
+            stroke-opacity="0.33"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <h2 class="Titre-2">What We Do</h2>
+        <p class="titre-2">For Your Business</p>
+        <div class="conteneur2">
+          <div class="rectangle-9">
+            <h2 class="web">WEBSITE DESIGN</h2>
+            <p class="me">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+            <img src="img/Group 3466111.png" alt="image9" class="image9" />
+          </div>
+          <div class="rectangle-9">
+            <h2 class="web">WEBSITE DEVELOPMENT</h2>
+            <p class="me">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+            <img src="img/Group 3466112.png" alt="image9" class="image9" />
+          </div>
+          <div class="rectangle-9">
+            <h2 class="web">MOBILE APP DEVELOPMENT</h2>
+            <p class="me">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+            <img src="img/Group 3466113.png" alt="image9" class="image9" />
+          </div>
+          <div class="rectangle-9">
+            <h2 class="web">MARKETING</h2>
+            <p class="me">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+            <img src="img/Group 3466114.png" alt="image9" class="image9" />
+          </div>
+        </div>
+      </section>
+      <div>
+        <div class="cercle"></div>
+        <img class="vector-9" alt="vector-9" src="img/Vector 9.png" />
+        <img class="image-2" alt="image-2" src="img/Mask Group-2.png" />
+        <img class="vector-6" alt="vector" src="img/Vector 4.png" />
+        <p class="titre-3">
+          <strong class="Titre-3"> About us </strong> Fake or Real
+        </p>
+        <p class="texte-2">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.
+        </p>
+        <p class="texte-3">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.
+        </p>
+        <button class="btn btn-deux">EXPLORE MORE</button>
+      </div>
+      <section>
+        <div class="rectangle-13"></div>
+        <img class="vector-7" alt="Vector" src="img/Vector 4.png" />
+        <p class="titre-4">
+          <strong class="Titre-4"> Our Recent Work</strong> By Our Experts
+        </p>
+        <p class="texte-4">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.
+        </p>
+        <!--<svg
+          class="icon4"
+          width="11"
+          height="16"
+          viewBox="0 0 11 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 1L2 8.34426L10 15"
+            stroke="black"
+            stroke-opacity="0.33"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          class="icon5"
+          width="11"
+          height="16"
+          viewBox="0 0 11 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L9 8.34426L1 15"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>-->
+        <div class="conteneur">
+          <div class="slider">
+            <div class="rectangle-3">
+              <img class="image-3" alt="image3" src="img/Mask Group 3.png" />
+              <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+              <p class="petit">UI SOUP</p>
+              <button class="work">View Work</button>
+            </div>
+            <div class="rectangle-3">
+              <img class="image-3" alt="image3" src="img/Mask Group 5.png" />
+              <img class="image-6" alt="image6" src="img/Mask Group 6.png" />
+              <p class="petit">Goldcrown Labs</p>
+              <button class="work">View Work</button>
+            </div>
+            <div class="rectangle-3">
+              <img class="image-3" alt="image3" src="img/Mask Group 7.png" />
+              <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+              <p class="petit">Close Concierge</p>
+              <button class="work">View Work</button>
+            </div>
+            <!-- Ajoutez plus de div.rectangle-3 pour plus de slides -->
+          </div>
+        </div>
+
+        <!--<div class="conteneur">
+          <div class="rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 3.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+            <p class="petit">UI SOUP</p>
+            <button class="work">View Work</button>
+          </div>
+          <div class="rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 5.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 6.png" />
+            <p class="petit">Goldcrown Labs</p>
+            <button class="work">View Work</button>
+          </div>
+          <div class="rectangle-3">
+            <img class="image-3" alt="image3" src="img/Mask Group 7.png" />
+            <img class="image-6" alt="image6" src="img/Mask Group 4.png" />
+            <p class="petit">Close Concierge</p>
+            <button class="work">View Work</button>
+          </div>
+        </div>-->
+      </section>
+      <section>
+        <img class="vector-8" alt="Vector" src="img/Vector 4.png" />
+        <p class="titre-5">
+          <strong class="Titre-5">Our Testimonials</strong> What Our Clients Are
+          Saying
+        </p>
+        <div class="rectangle-4">
+          <img
+            src="img/19399522241579780463 1.png"
+            class="image-4"
+            alt="image-4"
+          />
+          <p class="texte-5">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries.
+          </p>
+          <div class="rectangle-5"><strong class="mini">UI SOUP</strong></div>
+        </div>
+        <div class="rectangle-6">
+          <img
+            src="img/19399522241579780463 1.png"
+            class="image-5"
+            alt="image-5"
+          />
+          <p class="texte-6">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries.
+          </p>
+          <div class="rectangle-7"><strong class="mini-2">UI SOUP</strong></div>
+        </div>
+      </section>
+      <section>
+        <div class="rectangle-8">
+          <img
+            src="img/Rectangle 42.png"
+            alt="rectanlge-42"
+            class="rectangle-42"
+          />
+          <h2 class="logo-titre">Dream agency</h2>
+          <p class="texte-7">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries.
+          </p>
+          <h3 class="mini-titre">GET IN TOUCH</h3>
+          <div class="btn-trois">
+            <!--<input class="btn-4"><p class="email">ENTER YOUR EMAIL</p></input>-->
+              <input
+                type="email"
+                id="email"
+                class="btn-4"
+                onclick="effacerTexte()"
+              />
+              <p class="email">ENTER YOUR EMAIL</p>
+            </label>
+            <button class="btn-5">SEND</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
